@@ -1,0 +1,129 @@
+.lang-switch {
+    display: flex;
+    gap: 10px;
+    font-size: var(--text-xs);
+}
+
+.lang-switch a {
+    color: rgba(239, 89, 51, 0.45);
+}
+
+.lang-switch a:hover {
+    color: var(--orange);
+}
+
+.lang-switch .is-active {
+    color: var(--orange);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.burger {
+    width: 28px;
+    height: 22px;
+    background: none;
+    border: none;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.burger span {
+    position: absolute;
+    left: 0;
+    height: 3px;
+    background: var(--dark-0);
+    transition: transform 0.35s ease, opacity 0.2s ease;
+}
+
+.burger span:nth-child(1) {
+    top: 0;
+    width: 100%;
+}
+
+.burger span:nth-child(2) {
+    top: 50%;
+    width: 75%;
+    left: 25%;
+    transform: translateY(-50%);
+}
+
+.burger span:nth-child(3) {
+    bottom: 0;
+    width: 100%;
+}
+
+.burger.is-active span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.burger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.is-active span:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--beige);
+    display: none;
+    overflow-y: auto;
+    z-index: 90;
+}
+
+.menu-overlay.is-active {
+    display: block;
+    overflow: hidden;
+}
+
+.menu {
+    min-height: 100vh;
+    padding: 150px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-title {
+    font-family: "Bauhaus 93", sans-serif;
+    font-size: var(--title-lg);
+    font-weight: 400;
+    margin: 0;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-list a {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--dark-0);
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.menu-separator {
+    width: 48px;
+    height: 2px;
+    background: var(--orange);
+    margin-bottom: 15px;
+}

@@ -1,0 +1,16 @@
+:root {
+    --white: #ffffff;
+    --dark-0: #303030;
+    --dark-1: #1e1e1e;
+    --beige: #e1ded6;
+    --orange: #ef5933;
+    --yellow: #f4c80d;
+    --blue: #3979a4;
+    --blue-light: #69c3ff;
+
+    --header-height: 100px;
+
+    --text-xs: 12px;
+    --text-sm: 16px;
+    --title-lg: 40px;
+}
