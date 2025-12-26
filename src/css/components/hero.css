@@ -1,0 +1,43 @@
+.hero {
+    position: relative;
+}
+
+.hero-media {
+    margin: 0;
+}
+
+.hero-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-caption {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-left: 1.5rem;
+}
+
+.hero-text {
+    position: absolute;
+    top: 42%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    color: var(--white);
+}
+
+.hero-title {
+    font-family: "Bauhaus 93", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 0.9;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+}
