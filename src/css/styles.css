@@ -3,4 +3,7 @@
 @import "./base/main.css";
 @import "./layout/header.css";
 @import "./components/menu.css";
+
+
 @import "./components/hero.css";
+@import "./components/articles-preview.css";
