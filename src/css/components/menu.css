@@ -1,6 +1,6 @@
 .lang-switch {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     font-size: var(--text-xs);
 }
 
@@ -15,12 +15,12 @@
 .lang-switch .is-active {
     color: var(--orange);
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 0.25rem;
 }
 
 .burger {
-    width: 28px;
-    height: 22px;
+    width: 1.75rem;
+    height: 1.375rem;
     background: none;
     border: none;
     padding: 0;
@@ -31,7 +31,7 @@
 .burger span {
     position: absolute;
     left: 0;
-    height: 3px;
+    height: 0.1875rem;
     background: var(--dark-0);
     transition: transform 0.35s ease, opacity 0.2s ease;
 }
@@ -83,16 +83,16 @@
 
 .menu {
     min-height: 100vh;
-    padding: 150px 24px 40px;
+    padding: 9.375rem 1.5rem 2.5rem;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 .menu-section {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 .menu-title {
@@ -118,20 +118,20 @@
     font-weight: 500;
     color: var(--dark-0);
     text-decoration: none;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 .menu-separator {
-    width: 48px;
-    height: 2px;
+    width: 3rem;
+    height: 0.125rem;
     background: var(--orange);
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 .menu-title,
 .menu-list li {
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateX(1.25rem);
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
