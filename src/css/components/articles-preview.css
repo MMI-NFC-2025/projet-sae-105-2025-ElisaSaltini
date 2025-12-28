@@ -64,7 +64,7 @@
 .articles-divider--full {
     height: 2.2rem;
     background: var(--orange);
-    margin: 1rem -1.5rem 4.5rem;
+    margin: 1rem -1.5rem 3rem;
 }
 
 /* Carte article */
@@ -164,32 +164,49 @@
 
 /* Image article 3 */
 
-.article-media--alt .media-bg {
+.article-media--alt {
+    position: relative;
+    max-width: 16rem;
+    z-index: 1;
+}
+
+.article-media--alt::before {
+    content: "";
     position: absolute;
+    right: -2.75rem;
+    bottom: -2rem;
+    width: 14rem;
+    height: 6rem;
+    background: var(--orange);
     z-index: 0;
 }
 
-.article-media--alt .media-bg--orange {
-    bottom: -1.5rem;
-    right: -1.5rem;
-    width: 90%;
-    height: 35%;
-    background: var(--orange);
-}
-
-.article-media--alt .media-bg--blue {
-    top: 30%;
-    right: -0.75rem;
-    width: 65%;
-    height: 8%;
+.article-media--alt::after {
+    content: "";
+    position: absolute;
+    right: -2.75rem;
+    top: 58%;
+    width: 9.5rem;
+    height: 1.25rem;
     background: var(--blue);
+    z-index: 0;
 }
 
 .article-media--alt img {
     position: relative;
-    right: 2rem;
-    width: 75%;
+    z-index: 1;
+    width: 85%;
     height: auto;
     display: block;
-    z-index: 1;
+    right: 2rem;
+}
+
+.article-media--alt .article-caption {
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    font-size: var(--text-xxs);
+    font-weight: 500;
+    color: var(--dark-0);
+    z-index: 2;
 }
