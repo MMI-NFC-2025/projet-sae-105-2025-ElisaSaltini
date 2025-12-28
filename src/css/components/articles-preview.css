@@ -181,13 +181,14 @@
     top: 30%;
     right: -0.75rem;
     width: 65%;
-    height: 18%;
+    height: 8%;
     background: var(--blue);
 }
 
 .article-media--alt img {
     position: relative;
-    width: 100%;
+    right: 2rem;
+    width: 75%;
     height: auto;
     display: block;
     z-index: 1;
