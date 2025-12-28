@@ -67,6 +67,33 @@
     margin: 1rem -1.5rem 3rem;
 }
 
+/* séparateur 4 */
+
+.articles-divider--outline {
+    position: relative;
+    height: 2.5rem;
+    margin: 0 -1.5rem 4.5rem;
+}
+
+.divider-blue-full {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 100%;
+    height: 2.5rem;
+    background: var(--blue);
+}
+
+.divider-outline {
+    position: absolute;
+    top: 1rem;
+    left: 40%;
+    width: 18rem;
+    height: 2.5rem;
+    border: 0.0625rem solid var(--dark-0);
+    background: transparent;
+}
+
 /* Carte article */
 
 .article-card {
