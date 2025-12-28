@@ -5,5 +5,8 @@
 @import "./components/menu.css";
 
 
+/* home page */
+
 @import "./components/hero.css";
 @import "./components/articles-preview.css";
+@import "./components/home-feature.css";
