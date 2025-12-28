@@ -1,4 +1,4 @@
-/* card 2 */
+/* card 2 et 4*/
 
 .home-feature {
     display: grid;
@@ -57,4 +57,36 @@
     font-weight: 500;
     line-height: 1.25;
     margin: 0 0 1rem;
+}
+
+
+/* variante pour card 4 */
+
+
+.home-feature--visual .home-feature__media {
+    max-width: 90%;
+}
+
+/* Grand rectangle orange derrière */
+.home-feature--visual .home-feature__media::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    width: 6.5rem;
+    height: 4rem;
+    background: var(--orange);
+    z-index: -1;
+}
+
+/* Rectangle jaune secondaire */
+.home-feature--visual .home-feature__media::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: -1.5rem;
+    width: 3.5rem;
+    height: 2.25rem;
+    background: var(--yellow);
+    z-index: -1;
 }
