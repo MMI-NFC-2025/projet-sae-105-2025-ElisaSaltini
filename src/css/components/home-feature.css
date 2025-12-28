@@ -2,21 +2,23 @@
 
 .home-feature {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 1.25rem;
+    grid-template-columns: 11rem 1fr;
+    gap: 1rem;
     padding: 0 1.5rem 3rem;
+    overflow-x: hidden;
 }
 
 .home-feature__media {
     position: relative;
-    max-width: 10.5rem;
+    margin-left: -1.5rem;
+    max-width: 100%;
 }
 
 .home-feature__media::before {
     content: "";
     position: absolute;
     top: -0.75rem;
-    left: -0.75rem;
+    left: 0;
     width: 4.25rem;
     height: 4.25rem;
     background: var(--yellow);
@@ -39,7 +41,7 @@
 }
 
 .home-feature__content {
-    max-width: 17rem;
+    max-width: 19rem;
 }
 
 .home-feature__title {
