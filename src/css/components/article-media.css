@@ -2,9 +2,34 @@
     margin: 3rem 0;
 }
 
+.article-media-block__bars {
+    position: relative;
+    height: 3.5rem;
+    margin: 0 -1.5rem 0;
+}
+
+.article-media-block__bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.article-media-block__bar--blue {
+    top: 0;
+    height: 0.75rem;
+    left: 10%;
+    background: var(--blue);
+}
+
+.article-media-block__bar--yellow {
+    top: 1.25rem;
+    height: 2rem;
+    background: var(--yellow);
+}
+
 .article-media-block__figure {
     position: relative;
-    margin: 0;
+    margin: 0 -1.5rem;
 }
 
 .article-media-block__figure img {
@@ -39,6 +64,6 @@
     font-size: var(--text-xxs);
     font-weight: 500;
     color: var(--dark-0);
-    margin: 0.75rem 0 0;
+    margin-top: 0.75rem;
     padding: 0 1.5rem;
 }
