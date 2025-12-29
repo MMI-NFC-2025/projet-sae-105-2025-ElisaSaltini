@@ -17,8 +17,8 @@
 }
 
 .site-footer__bars .bar--white {
-    height: 0.25rem;
-    background: var(--white);
+    height: 0.75rem;
+    background: var(--beige);
 }
 
 /* contenu */
@@ -30,11 +30,17 @@
 
 /* logo */
 
+.site-footer__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    margin-top: -1rem;
+}
+
 .site-footer__logo img {
-    width: 8rem;
+    width: 12rem;
     height: auto;
     display: block;
-    margin-bottom: 2rem;
 }
 
 /* navigation */
@@ -46,7 +52,7 @@
 }
 
 .site-footer__nav li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.4rem;
 }
 
 .site-footer__nav a {
@@ -64,58 +70,73 @@
 
 .site-footer__mail {
     display: inline-block;
-    margin-bottom: 0.75rem;
+    margin-bottom: -0rem;
     font-size: var(--text-xs);
     font-weight: 500;
-    color: var(--dark-0);
+    color: var(--beige);
     text-decoration: underline;
 }
 
 .site-footer__author {
     font-size: var(--text-xs);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
 }
 
 .site-footer__legal {
-    font-size: var(--text-xxs);
-    line-height: 1.4;
-    max-width: 22rem;
+    font-size: var(--text-xs);
+    line-height: 1.25;
+    max-width: none;
+    width: 100%;
+    margin-top: 1.5rem;
 }
 
 /* formes décoratives */
 
-.site-footer__shapes {
+.site-footer {
+    position: relative;
+    overflow: hidden;
+}
+
+/* conteneur décoratif */
+.site-footer__decor {
     position: absolute;
-    right: 1.5rem;
-    top: 4rem;
-    width: 8rem;
+    top: 6rem;
+    right: 0;
+    width: 8.5rem;
     height: 10rem;
+    pointer-events: none;
 }
 
-.shape {
+/* rectangle contour */
+.decor-outline {
     position: absolute;
-}
-
-.shape--outline {
     top: 0;
     right: 0;
     width: 6rem;
-    height: 8rem;
+    height: 9rem;
     border: 0.0625rem solid var(--dark-0);
+    z-index: 2;
 }
 
-.shape--orange {
-    top: 2rem;
+/* rectangle orange */
+.decor-orange {
+    position: absolute;
+    top: 2.2rem;
     right: 0;
-    width: 4.5rem;
+    width: 8.5rem;
     height: 1rem;
     background: var(--orange);
+    z-index: 1;
 }
 
-.shape--yellow {
-    top: 3.5rem;
+/* rectangle jaune */
+.decor-yellow {
+    position: absolute;
+    top: 3.8rem;
     right: 0;
-    width: 4.5rem;
-    height: 2.5rem;
+    width: 7.5rem;
+    height: 3rem;
     background: var(--yellow);
+    z-index: 1;
 }
