@@ -4,11 +4,8 @@
 @import "./layout/header.css";
 @import "./components/menu.css";
 @import "./layout/footer.css";
-
-
-/* home page */
-
 @import "./components/hero.css";
 @import "./components/articles-preview.css";
 @import "./components/home-feature.css";
 @import "./components/bouton.css";
+@import "./components/article-content.css"

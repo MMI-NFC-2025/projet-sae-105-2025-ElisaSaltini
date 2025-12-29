@@ -1,0 +1,38 @@
+/* article texte principal */
+
+.article-content {
+    padding: 1rem 1.5rem;
+    max-width: 36rem;
+}
+
+/* Titre */
+
+.article-content__title {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 1.5rem;
+    color: var(--dark-0);
+}
+
+/* lien vers le glossaire */
+
+.article-content__highlight {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: inherit;
+}
+
+/* Corps de texte */
+
+.article-content__text p {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    line-height: 1.45;
+    margin: 0 0 1.25rem;
+    color: var(--dark-0);
+}
+
+.article-content__text p:last-child {
+    margin-bottom: 0;
+}
