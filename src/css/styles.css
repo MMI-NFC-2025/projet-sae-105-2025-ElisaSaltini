@@ -1,11 +1,28 @@
 @import "./vendors/normalize.css";
+
 @import "./utils/variables.css";
-@import "./base/main.css";
+
+/* Layout */
 @import "./layout/header.css";
-@import "./components/menu.css";
 @import "./layout/footer.css";
+
+/* Base */
+@import "./base/main.css";
+
+/* Components */
+@import "./components/menu.css";
 @import "./components/hero.css";
 @import "./components/articles-preview.css";
 @import "./components/home-feature.css";
 @import "./components/bouton.css";
-@import "./components/article-content.css"
+
+/* Article */
+@import "./components/article-media.css";
+@import "./components/article-content.css";
+
+
+
+
+
+
+
