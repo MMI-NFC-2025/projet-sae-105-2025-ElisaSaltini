@@ -94,6 +94,32 @@
     background: transparent;
 }
 
+/* séparateur 5 */
+
+.articles-divider--final {
+    position: relative;
+    height: 3.5rem;
+    margin: 0 -1.5rem 4rem;
+}
+
+.articles-divider--final .divider-blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.75rem;
+    background: var(--blue);
+}
+
+.articles-divider--final .divider-yellow {
+    position: absolute;
+    top: 1.25rem;
+    left: -4rem;
+    width: 100%;
+    height: 2rem;
+    background: var(--yellow);
+}
+
 /* Carte article */
 
 .article-card {
