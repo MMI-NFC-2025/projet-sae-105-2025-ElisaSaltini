@@ -263,3 +263,51 @@
     color: var(--dark-0);
     z-index: 2;
 }
+
+
+
+/* Variante article 5*/
+
+.article-card--book {
+    margin-bottom: 5rem;
+}
+
+/* Image livre */
+
+.article-media--book {
+    max-width: 10rem;
+    margin-left: 0rem;
+}
+
+.article-media--book img {
+    width: 80%;
+    height: auto;
+    display: block;
+    right: 0;
+
+}
+
+/* Légende */
+
+.article-caption--book {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    font-size: var(--text-xxs);
+    font-weight: 500;
+    color: var(--dark-0);
+}
+
+/* texte */
+
+.article-card--book {
+    gap: 1.75rem;
+}
+
+.article-card--book .article-content {
+    flex: 0 0 53%;
+    max-width: none;
+}
+
+.article-card--book .article-media {
+    flex: 0 0 45%;
+}
