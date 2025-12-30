@@ -75,14 +75,14 @@
 /* decoration carrousel article 1 */
 
 .article-media-deco {
-    padding: 1.5rem 0;
     overflow-x: hidden;
+    margin-top: 1rem;
+    margin-bottom: -0.75rem;
 }
 
 .article-media-deco__yellow {
     display: block;
     height: 2rem;
-    width: 18rem;
+    width: 14rem;
     background: var(--yellow);
-    margin-left: 1.5rem;
 }
