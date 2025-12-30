@@ -1,0 +1,99 @@
+/* =========================
+   CAROUSEL
+   ========================= */
+
+.carousel-wrapper {
+    margin-top: 1.5rem;
+}
+
+/* Full-bleed sans casser le layout */
+.carousel {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--orange);
+    padding: 1.5rem 0 1.25rem;
+    overflow: hidden;
+}
+
+/* Zone visible */
+.carousel__viewport {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Track */
+.carousel__track {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 0.45s ease;
+    will-change: transform;
+}
+
+/* Slide */
+.carousel__slide {
+    min-width: 100%;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
+/* Image */
+.carousel__img {
+    display: block;
+    width: min(100%, 22rem);
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Caption */
+.carousel__caption {
+    font-size: var(--text-xxs);
+    font-weight: 500;
+    color: var(--dark-0);
+    margin-top: 0.75rem;
+    text-align: left;
+
+    opacity: 0;
+    transform: translateY(0.35rem);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.carousel__caption.is-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Flèches */
+.carousel__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--dark-0);
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.carousel__arrow--prev {
+    left: 1rem;
+}
+
+.carousel__arrow--next {
+    right: 1rem;
+}
+
+/* Accessibilité motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .carousel__track,
+    .carousel__caption {
+        transition: none;
+    }
+}

@@ -71,3 +71,18 @@
     margin-top: 0.75rem;
     padding: 0 1.5rem;
 }
+
+/* decoration carrousel article 1 */
+
+.article-media-deco {
+    padding: 1.5rem 0;
+    overflow-x: hidden;
+}
+
+.article-media-deco__yellow {
+    display: block;
+    height: 2rem;
+    width: 18rem;
+    background: var(--yellow);
+    margin-left: 1.5rem;
+}
