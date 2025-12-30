@@ -7,29 +7,89 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevBtn = carousel.querySelector(".carousel__arrow--prev");
     const nextBtn = carousel.querySelector(".carousel__arrow--next");
 
-    let currentIndex = 0;
+    let index = 0;
+    let isAnimating = false;
 
-    function updateCarousel() {
-        const offset = currentIndex * -100;
-        track.style.transform = `translateX(${offset}%)`;
-
-        slides.forEach((slide, index) => {
+    // === Active slide ===
+    const setActive = () => {
+        slides.forEach((slide, i) => {
             const caption = slide.querySelector(".carousel__caption");
-            if (!caption) return;
+            const active = i === index;
 
-            caption.classList.toggle("is-active", index === currentIndex);
+            slide.classList.toggle("is-active", active);
+            caption?.classList.toggle("is-active", active);
         });
-    }
+    };
 
-    prevBtn.addEventListener("click", () => {
-        currentIndex =
-            currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
-        updateCarousel();
+    // === Translate ===
+    const setTranslate = () => {
+        track.style.transform = `translateX(${-index * 100}%)`;
+    };
+
+    // === Next ===
+    const goNext = () => {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        index = (index + 1) % slides.length;
+
+        setTranslate();
+        setActive();
+
+        setTimeout(() => isAnimating = false, 450);
+    };
+
+    // === Prev ===
+    const goPrev = () => {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        index = (index - 1 + slides.length) % slides.length;
+
+        setTranslate();
+        setActive();
+
+        setTimeout(() => isAnimating = false, 450);
+    };
+
+    nextBtn?.addEventListener("click", goNext);
+    prevBtn?.addEventListener("click", goPrev);
+
+    // === Swipe ===
+    let startX = 0;
+    let currentX = 0;
+    let dragging = false;
+
+    carousel.addEventListener("pointerdown", e => {
+        dragging = true;
+        startX = e.clientX;
+        currentX = startX;
+        track.style.transition = "none";
     });
 
-    nextBtn.addEventListener("click", () => {
-        currentIndex =
-            currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
-        updateCarousel();
+    window.addEventListener("pointermove", e => {
+        if (!dragging) return;
+        currentX = e.clientX;
+        const dx = currentX - startX;
+        track.style.transform = `translateX(${-index * 100}%) translateX(${dx}px)`;
     });
+
+    window.addEventListener("pointerup", () => {
+        if (!dragging) return;
+        dragging = false;
+        track.style.transition = "";
+
+        const dx = currentX - startX;
+
+        if (Math.abs(dx) > 50) {
+            dx < 0 ? goNext() : goPrev();
+        } else {
+            setTranslate();
+        }
+    });
+
+    // === Init ===
+    track.style.transition = "transform 0.45s cubic-bezier(.22,.61,.36,1)";
+    setTranslate();
+    setActive();
 });

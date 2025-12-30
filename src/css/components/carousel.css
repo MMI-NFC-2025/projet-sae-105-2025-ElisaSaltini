@@ -2,18 +2,19 @@
    CAROUSEL
    ========================= */
 
+/* Wrapper */
 .carousel-wrapper {
     margin-top: 1.5rem;
 }
 
-/* Full-bleed sans casser le layout */
+/* Full-bleed (plein écran horizontal) */
 .carousel {
     position: relative;
     width: 100vw;
     left: 50%;
     transform: translateX(-50%);
     background: var(--orange);
-    padding: 1.5rem 0 1.25rem;
+    padding: 1.5rem 0;
     overflow: hidden;
 }
 
@@ -29,7 +30,9 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    transition: transform 0.45s ease;
+
+    transform: translateX(0);
+    transition: transform 0.45s cubic-bezier(.22, .61, .36, 1);
     will-change: transform;
 }
 
@@ -38,6 +41,11 @@
     min-width: 100%;
     padding: 0 1.5rem;
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Image */
@@ -46,6 +54,15 @@
     width: min(100%, 22rem);
     height: auto;
     margin: 0 auto;
+
+    opacity: 0.85;
+    transform: scale(0.98);
+    transition: opacity 0.35s ease, transform 0.45s ease;
+}
+
+.carousel__slide.is-active .carousel__img {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* Caption */
@@ -64,6 +81,7 @@
 .carousel__caption.is-active {
     opacity: 1;
     transform: translateY(0);
+    transition-delay: 0.08s;
 }
 
 /* Flèches */
@@ -89,10 +107,11 @@
     right: 1rem;
 }
 
-/* Accessibilité motion */
+/* Accessibilité – réduction des animations */
 @media (prefers-reduced-motion: reduce) {
 
     .carousel__track,
+    .carousel__img,
     .carousel__caption {
         transition: none;
     }
