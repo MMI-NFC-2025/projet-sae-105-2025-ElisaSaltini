@@ -200,7 +200,7 @@
 
 .article-media img {
     position: relative;
-    right: 2rem;
+    right: 4rem;
     width: 85%;
     height: auto;
     display: block;
@@ -211,7 +211,7 @@
     font-size: var(--text-xxs);
     font-weight: 500;
     margin-top: 0.5rem;
-    margin-left: -2rem;
+    margin-left: -4rem;
     color: var(--dark-0);
 }
 
@@ -251,7 +251,7 @@
     width: 85%;
     height: auto;
     display: block;
-    right: 2rem;
+    right: 4rem;
 }
 
 .article-media--alt .article-caption {
@@ -272,7 +272,7 @@
     margin-bottom: 3rem;
 }
 
-/* Image livre */
+/* Image article 5 */
 
 .article-media--book {
     max-width: 10rem;
@@ -283,14 +283,14 @@
     width: 80%;
     height: auto;
     display: block;
-    right: 0;
+    right: 2rem;
 
 }
 
 /* Légende */
 
 .article-caption--book {
-    margin-left: 0;
+    margin-left: -2rem;
     margin-top: 0.5rem;
     font-size: var(--text-xxs);
     font-weight: 500;
