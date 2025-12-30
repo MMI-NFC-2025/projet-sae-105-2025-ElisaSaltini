@@ -1,13 +1,10 @@
-/* =========================
-   CAROUSEL
-   ========================= */
+/* caroussel */
 
-/* Wrapper */
 .carousel-wrapper {
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-/* Full-bleed (plein écran horizontal) */
 .carousel {
     position: relative;
     width: 100vw;
@@ -18,13 +15,11 @@
     overflow: hidden;
 }
 
-/* Zone visible */
 .carousel__viewport {
     position: relative;
     overflow: hidden;
 }
 
-/* Track */
 .carousel__track {
     display: flex;
     padding: 0;
@@ -36,7 +31,6 @@
     will-change: transform;
 }
 
-/* Slide */
 .carousel__slide {
     min-width: 100%;
     padding: 0 1.5rem;
@@ -48,7 +42,6 @@
     align-items: center;
 }
 
-/* Image */
 .carousel__img {
     display: block;
     width: min(100%, 22rem);
@@ -65,7 +58,6 @@
     transform: scale(1);
 }
 
-/* Caption */
 .carousel__caption {
     font-size: var(--text-xxs);
     font-weight: 500;
@@ -84,7 +76,6 @@
     transition-delay: 0.08s;
 }
 
-/* Flèches */
 .carousel__arrow {
     position: absolute;
     top: 50%;
@@ -107,7 +98,7 @@
     right: 1rem;
 }
 
-/* Accessibilité – réduction des animations */
+/* Accessibilité et réduction des animations */
 @media (prefers-reduced-motion: reduce) {
 
     .carousel__track,

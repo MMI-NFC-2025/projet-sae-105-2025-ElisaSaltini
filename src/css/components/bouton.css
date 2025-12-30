@@ -14,3 +14,10 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+
+/* Bouton "article suivant" */
+.button--next {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
