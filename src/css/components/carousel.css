@@ -107,3 +107,10 @@
         transition: none;
     }
 }
+
+
+/* VARIANTE CAROUSEL JAUNE */
+
+.carousel--yellow {
+    background: var(--yellow);
+}
