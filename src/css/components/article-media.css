@@ -122,3 +122,48 @@
     height: 1.5rem;
     background: var(--orange);
 }
+ /* 2e separateur article 3 */
+
+/* =========================
+   MEDIA SEPARATOR – BLUE / YELLOW (SAFE)
+   ========================= */
+
+.media-separator {
+    position: relative;
+    height: 3.5rem;
+    margin: 2.5rem 0 3rem;
+
+    /* 🔒 empêche TOUT débordement horizontal */
+    overflow-x: hidden;
+}
+
+/* conteneur full-bleed interne */
+.media-separator::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+/* barres génériques */
+.media-separator__bar {
+    position: absolute;
+    height: 1rem;
+}
+
+/* barre bleue (haut gauche) */
+.media-separator__bar--blue {
+    top: 0;
+    left: 0;
+    width: 85vw;
+    height: 1.5rem;
+    background: var(--blue);
+}
+
+/* barre jaune (bas droite) */
+.media-separator__bar--yellow {
+    bottom: 0;
+    top: 2rem;
+    right: 0;
+    width: 65vw;
+    background: var(--yellow);
+}
