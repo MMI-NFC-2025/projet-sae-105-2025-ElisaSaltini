@@ -128,8 +128,6 @@
     position: relative;
     height: 3.5rem;
     margin: 2.5rem 0 1.5rem;
-
-    /* 🔒 empêche TOUT débordement horizontal */
     overflow-x: hidden;
 }
 
@@ -161,5 +159,37 @@
     top: 2rem;
     right: 0;
     width: 65vw;
+    background: var(--yellow);
+}
+
+/* 3e séparateur article 3 */
+
+.media-separator--compact-alt {
+    position: relative;
+    height: 3.5rem;
+    margin: 1.25rem 0;
+    overflow-x: hidden;
+}
+
+/* Barres spécifiques à cette variante */
+.media-separator--compact-alt .media-separator__bar {
+    position: absolute;
+}
+
+/* Orange – haut, décalé à droite */
+.media-separator--compact-alt .media-separator__bar--orange {
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 1rem;
+    background: var(--orange);
+}
+
+/* Jaune – bas, décalé à gauche */
+.media-separator--compact-alt .media-separator__bar--yellow {
+    bottom: 0;
+    left: 0;
+    width: 85%;
+    height: 1.5rem;
     background: var(--yellow);
 }
