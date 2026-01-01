@@ -1,95 +1,105 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const carousel = document.querySelector(".carousel");
-    if (!carousel) return;
+    const carousels = document.querySelectorAll(".carousel");
+    if (!carousels.length) return;
 
-    const track = carousel.querySelector(".carousel__track");
-    const slides = Array.from(track.children);
-    const prevBtn = carousel.querySelector(".carousel__arrow--prev");
-    const nextBtn = carousel.querySelector(".carousel__arrow--next");
+    carousels.forEach(carousel => {
+        const track = carousel.querySelector(".carousel__track");
+        if (!track) return;
 
-    let index = 0;
-    let isAnimating = false;
+        const slides = Array.from(track.children);
+        if (slides.length < 2) return;
 
-    // === Active slide ===
-    const setActive = () => {
-        slides.forEach((slide, i) => {
-            const caption = slide.querySelector(".carousel__caption");
-            const active = i === index;
+        const prevBtn = carousel.querySelector(".carousel__arrow--prev");
+        const nextBtn = carousel.querySelector(".carousel__arrow--next");
 
-            slide.classList.toggle("is-active", active);
-            caption?.classList.toggle("is-active", active);
-        });
-    };
+        let index = 0;
+        let isAnimating = false;
 
-    // === Translate ===
-    const setTranslate = () => {
-        track.style.transform = `translateX(${-index * 100}%)`;
-    };
+        // === Active slide ===
+        const setActive = () => {
+            slides.forEach((slide, i) => {
+                const caption = slide.querySelector(".carousel__caption");
+                const active = i === index;
 
-    // === Next ===
-    const goNext = () => {
-        if (isAnimating) return;
-        isAnimating = true;
+                slide.classList.toggle("is-active", active);
+                caption?.classList.toggle("is-active", active);
+            });
+        };
 
-        index = (index + 1) % slides.length;
+        // === Translate ===
+        const setTranslate = () => {
+            track.style.transform = `translateX(${-index * 100}%)`;
+        };
 
-        setTranslate();
-        setActive();
+        // === Next ===
+        const goNext = () => {
+            if (isAnimating) return;
+            isAnimating = true;
 
-        setTimeout(() => isAnimating = false, 450);
-    };
+            index = (index + 1) % slides.length;
 
-    // === Prev ===
-    const goPrev = () => {
-        if (isAnimating) return;
-        isAnimating = true;
-
-        index = (index - 1 + slides.length) % slides.length;
-
-        setTranslate();
-        setActive();
-
-        setTimeout(() => isAnimating = false, 450);
-    };
-
-    nextBtn?.addEventListener("click", goNext);
-    prevBtn?.addEventListener("click", goPrev);
-
-    // === Swipe ===
-    let startX = 0;
-    let currentX = 0;
-    let dragging = false;
-
-    carousel.addEventListener("pointerdown", e => {
-        dragging = true;
-        startX = e.clientX;
-        currentX = startX;
-        track.style.transition = "none";
-    });
-
-    window.addEventListener("pointermove", e => {
-        if (!dragging) return;
-        currentX = e.clientX;
-        const dx = currentX - startX;
-        track.style.transform = `translateX(${-index * 100}%) translateX(${dx}px)`;
-    });
-
-    window.addEventListener("pointerup", () => {
-        if (!dragging) return;
-        dragging = false;
-        track.style.transition = "";
-
-        const dx = currentX - startX;
-
-        if (Math.abs(dx) > 50) {
-            dx < 0 ? goNext() : goPrev();
-        } else {
             setTranslate();
-        }
-    });
+            setActive();
 
-    // === Init ===
-    track.style.transition = "transform 0.45s cubic-bezier(.22,.61,.36,1)";
-    setTranslate();
-    setActive();
+            setTimeout(() => {
+                isAnimating = false;
+            }, 450);
+        };
+
+        // === Prev ===
+        const goPrev = () => {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            index = (index - 1 + slides.length) % slides.length;
+
+            setTranslate();
+            setActive();
+
+            setTimeout(() => {
+                isAnimating = false;
+            }, 450);
+        };
+
+        nextBtn?.addEventListener("click", goNext);
+        prevBtn?.addEventListener("click", goPrev);
+
+        // === Swipe ===
+        let startX = 0;
+        let currentX = 0;
+        let dragging = false;
+
+        carousel.addEventListener("pointerdown", e => {
+            dragging = true;
+            startX = e.clientX;
+            currentX = startX;
+            track.style.transition = "none";
+        });
+
+        window.addEventListener("pointermove", e => {
+            if (!dragging) return;
+            currentX = e.clientX;
+            const dx = currentX - startX;
+            track.style.transform = `translateX(${-index * 100}%) translateX(${dx}px)`;
+        });
+
+        window.addEventListener("pointerup", () => {
+            if (!dragging) return;
+            dragging = false;
+            track.style.transition = "";
+
+            const dx = currentX - startX;
+
+            if (Math.abs(dx) > 50) {
+                dx < 0 ? goNext() : goPrev();
+            } else {
+                setTranslate();
+            }
+        });
+
+        // === Init ===
+        track.style.transition = "transform 0.45s cubic-bezier(.22,.61,.36,1)";
+        setTranslate();
+        setActive();
+    });
 });

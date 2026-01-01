@@ -93,7 +93,7 @@
 .media-separator--offset {
     position: relative;
     height: 3rem;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
 
     width: 100vw;
     left: 50%;
@@ -124,14 +124,10 @@
 }
  /* 2e separateur article 3 */
 
-/* =========================
-   MEDIA SEPARATOR – BLUE / YELLOW (SAFE)
-   ========================= */
-
 .media-separator {
     position: relative;
     height: 3.5rem;
-    margin: 2.5rem 0 3rem;
+    margin: 2.5rem 0 1.5rem;
 
     /* 🔒 empêche TOUT débordement horizontal */
     overflow-x: hidden;

@@ -127,3 +127,9 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+/*VARIANTE CAROUSEL ORANGE*/
+
+.carousel--red {
+    background: var(--orange);
+}
