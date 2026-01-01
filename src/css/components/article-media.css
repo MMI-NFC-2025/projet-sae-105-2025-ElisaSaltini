@@ -86,3 +86,39 @@
     width: 14rem;
     background: var(--yellow);
 }
+
+
+/* SÉPARATEURS article 3 */
+
+.media-separator--offset {
+    position: relative;
+    height: 3rem;
+    margin: 1.5rem 0;
+
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Base des barres */
+.media-separator--offset .media-separator__bar {
+    position: absolute;
+    height: 1rem;
+}
+
+/* Jaune – en haut, aligné à droite */
+.media-separator--offset .media-separator__bar--yellow {
+    top: 0;
+    right: 0;
+    width: 70%;
+    background: var(--yellow);
+}
+
+/* Orange – en bas, aligné à gauche */
+.media-separator--offset .media-separator__bar--orange {
+    bottom: 0;
+    left: 0;
+    width: 85%;
+    height: 1.5rem;
+    background: var(--orange);
+}
