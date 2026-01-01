@@ -114,3 +114,16 @@
 .carousel--yellow {
     background: var(--yellow);
 }
+
+/* CAROUSEL VARIANTE COMPACTE
+   (pages articles)*/
+
+.carousel-wrapper--compact {
+    margin-top: -1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-wrapper--compact .carousel {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
