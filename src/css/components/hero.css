@@ -270,3 +270,60 @@
     max-width: 32rem;
     z-index: 3;
 }
+
+/* =========================
+   HERO – ARTICLE 4
+   ========================= */
+
+.hero--article-4 {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+/* Wrapper image */
+.hero-visual--article-4 {
+    position: relative;
+    margin-top: 1rem;
+}
+
+/* Image */
+.hero-visual--article-4 .hero-media img {
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   RECTANGLES DÉCORATIFS – ARTICLE 4
+   ========================= */
+
+.hero-visual-4__rect {
+    position: absolute;
+    z-index: 1;
+}
+
+/* Jaune – au-dessus de l’image */
+.hero-visual-4__rect--yellow {
+    top: -0.5rem;
+    left: 2rem;
+    width: 60%;
+    height: 0.5rem;
+    background: var(--yellow);
+}
+
+/* Bleu – sous le jaune */
+.hero-visual-4__rect--blue {
+    top: 0.25rem;
+    left: 0;
+    width: 65%;
+    height: 1.25rem;
+    background: var(--blue);
+}
+
+/* Orange – sous l’image */
+.hero-visual-4__rect--orange {
+    bottom: -3rem;
+    right: 0;
+    width: 65%;
+    height: 1.75rem;
+    background: var(--orange);
+}
