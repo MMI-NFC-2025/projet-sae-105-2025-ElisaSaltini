@@ -178,3 +178,95 @@
     margin-left: 1.5rem;
     max-width: 32rem;
 }
+
+
+
+/* =========================
+   HERO – ARTICLE 3
+   ========================= */
+
+.hero--article-3 {
+    padding-bottom: 2rem;
+}
+
+/* Image wrapper spécifique */
+.hero-image--article-3 {
+    position: relative;
+    margin-top: 1rem;
+}
+
+/* =====================================
+   HERO ARTICLE 3 – DÉCORS SPÉCIFIQUES
+   ===================================== */
+
+.hero--article-3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Wrapper image */
+.hero-visual {
+    position: relative;
+    margin-top: 1rem;
+}
+
+/* Image */
+.hero-visual .hero-media img {
+    width: 100%;
+    height: auto;
+    top: 1.25rem;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   RECTANGLES DÉCORATIFS
+   ========================= */
+
+.hero-visual__rect {
+    position: absolute;
+    z-index: 1;
+}
+
+/* Orange – au-dessus de l’image */
+.hero-visual__rect--orange {
+    top: -0.75rem;
+    right: 0;
+    width: 65%;
+    height: 0.7rem;
+    background: var(--orange);
+}
+
+/* Jaune – juste sous l’orange */
+.hero-visual__rect--yellow {
+    top: 0.35rem;
+    right: 0;
+    width: 75%;
+    height: 0.9rem;
+    background: var(--yellow);
+}
+
+/* Bleu – en bas à droite */
+.hero-visual__rect--blue {
+    bottom: -0.75rem;
+    left: 0;
+    width: 60%;
+    height: 1.5rem;
+    background: var(--blue);
+}
+
+/* =========================
+   SOURCE IMAGE
+   ========================= */
+
+.hero-visual__source {
+    position: relative;
+    font-size: var(--text-xxs);
+    font-weight: 500;
+    color: var(--dark-0);
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    max-width: 32rem;
+    z-index: 3;
+}
