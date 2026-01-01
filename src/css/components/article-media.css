@@ -12,7 +12,6 @@
 
 .article-media-block__bar {
     position: absolute;
-    left: 0;
     width: 100%;
 }
 
@@ -70,6 +69,8 @@
     color: var(--dark-0);
     margin-top: 0.75rem;
     padding: 0 1.5rem;
+    position: relative;
+    z-index: 3;
 }
 
 /* decoration carrousel article 1 */
@@ -230,3 +231,43 @@
     height: 1rem;
     background: var(--blue);
 }
+
+/*VARIANTE DECO ARTICLE 4 IMAGE 1*/
+
+.article-media-block--scene {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Barres décoratives spécifiques */
+.article-media-block--scene .article-media-block__bars {
+    height: 4rem;
+}
+
+/* Bleu – en haut, aligné à droite */
+.article-media-block__bar--scene-blue {
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 1.75rem;
+    background: var(--blue);
+}
+
+/* Jaune – juste en dessous */
+.article-media-block__bar--scene-yellow {
+    top: 2.25rem;
+    right: 7rem;
+    width: 60%;
+    height: 1.25rem;
+    background: var(--yellow);
+}
+
+.article-media-block__bar--scene-orange {
+    display: block;
+    width: 90%;
+    height: 1.25rem;
+    background: var(--orange);
+    margin: 0 -1.5rem;
+    margin-top: 0.5rem;
+}
+
