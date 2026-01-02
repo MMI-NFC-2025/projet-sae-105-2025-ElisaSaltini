@@ -314,3 +314,67 @@
     right: 0;
 }
 
+
+/* TRAILER – ARTICLE 4 */
+
+.article-media-block--trailer {
+    position: relative;
+    margin: 2rem 0 -2rem;
+    padding: 3rem 0 2.5rem;
+    overflow-x: hidden;
+}
+
+/* =========================
+   RECTANGLE BLEU (AU-DESSUS)
+   ========================= */
+
+.article-media-block--trailer .article-media-block__rect--blue {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 0.9rem;
+    background: var(--blue);
+    z-index: 1;
+}
+
+/* =========================
+   RECTANGLE ORANGE (FOND)
+   ========================= */
+
+.article-media-block--trailer .article-media-block__rect--orange {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 15rem;
+    transform: translate(-50%, -50%);
+    background: var(--orange);
+    z-index: 1;
+}
+
+/* =========================
+   IMAGE (AU-DESSUS)
+   ========================= */
+
+.article-media-block--trailer .article-media-block__figure {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-media-block--trailer img {
+    display: block;
+    width: min(100%, 22rem);
+    height: auto;
+}
+
+/* === FIX CENTRAGE IMAGE TRAILER === */
+.article-media-block--trailer .article-media-block__figure img {
+    width: auto;
+    max-width: 22rem;
+}
