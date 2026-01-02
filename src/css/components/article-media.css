@@ -412,3 +412,45 @@
     position: absolute;
     z-index: 0;
 }
+
+
+
+/* ARTICLE 5-2 */
+
+.article-media-block--bauhaus-cover {
+    margin-bottom: 0.5rem;
+    margin-top: -0.5rem;;
+}
+
+/* Zone des rectangles du haut */
+.article-media-block--bauhaus-cover .article-media-block__bars {
+    height: 5rem;
+}
+
+/* Jaune – en haut à gauche */
+.article-media-block__bar--bauhaus-yellow {
+    top: 3rem;
+    left: 0;
+    width: 35%;
+    height: 1.75rem;
+    background: var(--yellow);
+}
+
+/* Bleu – en haut à droite */
+.article-media-block__bar--bauhaus-blue {
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 2.5rem;
+    background: var(--blue);
+}
+
+/* Orange – sous l’image */
+.article-media-block__bar--bauhaus-orange {
+    display: block;
+    height: 1.25rem;
+    width: 85%;
+    background: var(--orange);
+    margin: 0 -1.5rem;
+    margin-top: 0.75rem;
+}
