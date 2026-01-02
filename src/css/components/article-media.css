@@ -271,3 +271,46 @@
     margin-top: 0.5rem;
 }
 
+
+/* VARIANTE IMAGE – ARTICLE 4 (SCÈNE 2) */
+
+.article-media-block--scene-2 {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Barres décoratives spécifiques */
+.article-media-block--scene-2 .article-media-block__bars {
+    height: 4rem;
+}
+
+/* Bleu – haut, long, aligné à droite */
+.article-media-block__bar--scene2-blue {
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 1.5rem;
+    background: var(--blue);
+}
+
+/* Jaune – sous le bleu */
+.article-media-block__bar--scene2-yellow {
+    top: 2rem;
+    right: 0;
+    width: 80%;
+    height: 1rem;
+    background: var(--yellow);
+}
+
+/* Orange – sous l’image */
+.article-media-block__bar--scene2-orange {
+    display: block;
+    height: 2rem;
+    width: 70%;
+    background: var(--orange);
+    margin: 0 -1.5rem;
+    right: 0;
+}
+
