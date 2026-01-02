@@ -31,6 +31,7 @@
 .article-media-block__figure {
     position: relative;
     margin: 0 -1.5rem;
+    z-index: 3;
 }
 
 .article-media-block__figure img {
@@ -377,4 +378,37 @@
 .article-media-block--trailer .article-media-block__figure img {
     width: auto;
     max-width: 22rem;
+}
+
+
+/* VARIANTE IMAGE – ARTICLE 5-1 */
+
+.article-media-block--artwork {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Barre jaune – en haut */
+.article-media-block__bar--artwork-yellow {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    width: 60%;
+    height: 2rem;
+    background: var(--yellow);
+}
+
+/* Barre orange – en bas */
+.article-media-block__bar--artwork-orange {
+    display: block;
+    height: 1.75rem;
+    right: 0;
+    width: 90%;
+    background: var(--orange);
+    margin: 0 -1.5rem;
+    margin-top: -0.25rem;
+    position: absolute;
+    z-index: 0;
 }
