@@ -6,10 +6,11 @@
     position: relative;
     width: 100%;
     max-width: 22rem;
-    margin: 3rem auto;
+    margin: 0 auto 2rem;
     padding-bottom: 1.5rem;
 
     background: var(--blue);
+    overflow: hidden;
 }
 
 /* =========================
@@ -18,54 +19,59 @@
 
 .frise-card__media {
     position: relative;
-    width: 100%;
+    display: flex;
+    justify-content: center;
     padding-top: 1.5rem;
 }
 
 .frise-card__media img {
     display: block;
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 18rem;
     height: auto;
     z-index: 2;
-    position: relative;
 }
 
 /* =========================
-   DATES (Bauhaus)
+   OVERLAY (DATES + NOM)
    ========================= */
 
-.frise-card__dates {
+.frise-card__overlay {
     position: absolute;
-    left: 1rem;
-    top: 2rem;
+    left: -1.75rem;
+    top: 73%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
 
+/* Dates */
+.frise-card__dates {
     font-family: "Bauhaus 93", sans-serif;
-    font-size: 3.25rem;
+    font-size: 60px;
     line-height: 0.85;
     font-weight: 400;
     color: var(--white);
-    z-index: 3;
 }
 
 .frise-card__dates span {
     display: block;
 }
 
+/* Nom */
+.frise-card__name {
+    margin-top: 0.25rem;
+    font-family: var(--font-inter);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--white);
+}
+
 /* =========================
-   CONTENU TEXTE
+   TEXTE SOUS L’IMAGE
    ========================= */
 
 .frise-card__content {
-    padding: 1.25rem 1.5rem 0;
-}
-
-.frise-card__title {
-    font-family: "Bauhaus 93", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin: 0 0 0.75rem;
-    color: var(--white);
+    padding: 0.25rem 2.25rem 0;
 }
 
 .frise-card__text {
@@ -74,4 +80,5 @@
     font-weight: 500;
     line-height: 1.35;
     color: var(--dark-0);
+    margin: 0;
 }
