@@ -18,6 +18,7 @@
 @import "./components/carousel.css";
 @import "./components/transition-frise.css";
 @import "./components/timeline-card.css";
+@import "./components/film-card.css";
 
 /* Article */
 @import "./components/article-media.css";

@@ -1,0 +1,103 @@
+/* =========================
+   FILM CARD
+   ========================= */
+
+.film-card {
+    margin: 1rem 4rem;
+    max-width: 22rem;
+    text-align: center;
+}
+
+/* =========================
+   ZONE VISUELLE
+   ========================= */
+
+.film-card__visual {
+    position: relative;
+    padding: 1.5rem 2rem 1.5rem;
+}
+
+/* Rectangle bleu */
+.film-card__bg--blue {
+    position: absolute;
+    inset: 0;
+    background: var(--blue);
+    z-index: 1;
+}
+
+/* Affiche */
+.film-card__poster {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.film-card__poster img {
+    width: 140%;
+    max-width: 16rem;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   RECTANGLE JAUNE (TITRE)
+   ========================= */
+
+.film-card__label {
+    position: relative;
+    z-index: 3;
+    margin: 1rem auto 0;
+    background: var(--beige);
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+}
+
+.film-card__title {
+    font-family: var(--font-inter);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--dark-0);
+    text-align: center;
+}
+
+/* =========================
+   TEXTE
+   ========================= */
+
+.film-card__content {
+    margin-top: 1rem;
+}
+
+.film-card__text {
+    font-family: var(--font-inter);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--dark-0);
+    margin: 0;
+}
+
+/* =========================
+   BOUTON
+   ========================= */
+
+.film-card__cta {
+    margin-top: 1.25rem;
+}
+
+
+/* =========================
+   FILM CARD – VARIANTES COULEURS
+   ========================= */
+
+/* Variante ORANGE */
+.film-card--orange .film-card__bg--blue {
+    background: var(--orange);
+}
+
+/* Variante JAUNE */
+.film-card--yellow .film-card__bg--blue {
+    background: var(--yellow);
+}
