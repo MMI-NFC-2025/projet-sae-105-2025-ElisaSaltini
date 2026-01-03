@@ -1,0 +1,77 @@
+/* =========================
+   FRISE – CARD
+   ========================= */
+
+.frise-card {
+    position: relative;
+    width: 100%;
+    max-width: 22rem;
+    margin: 3rem auto;
+    padding-bottom: 1.5rem;
+
+    background: var(--blue);
+}
+
+/* =========================
+   IMAGE
+   ========================= */
+
+.frise-card__media {
+    position: relative;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+.frise-card__media img {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+    z-index: 2;
+    position: relative;
+}
+
+/* =========================
+   DATES (Bauhaus)
+   ========================= */
+
+.frise-card__dates {
+    position: absolute;
+    left: 1rem;
+    top: 2rem;
+
+    font-family: "Bauhaus 93", sans-serif;
+    font-size: 3.25rem;
+    line-height: 0.85;
+    font-weight: 400;
+    color: var(--white);
+    z-index: 3;
+}
+
+.frise-card__dates span {
+    display: block;
+}
+
+/* =========================
+   CONTENU TEXTE
+   ========================= */
+
+.frise-card__content {
+    padding: 1.25rem 1.5rem 0;
+}
+
+.frise-card__title {
+    font-family: "Bauhaus 93", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0 0 0.75rem;
+    color: var(--white);
+}
+
+.frise-card__text {
+    font-family: var(--font-inter);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    line-height: 1.35;
+    color: var(--dark-0);
+}
