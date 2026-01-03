@@ -381,3 +381,24 @@
     height: 3rem;
     background: var(--blue);
 }
+
+
+
+/* =========================
+   HERO – FRISE CHRONOLOGIQUE
+   ========================= */
+
+.hero--frise {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* Ajustement du bloc titre */
+.hero--frise .hero-article__heading {
+    padding-bottom: 0.25rem;
+}
+
+/* Texte descriptif sous le titre */
+.hero--frise .article-content {
+    padding-top: 0;
+}
