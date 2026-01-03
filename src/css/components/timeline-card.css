@@ -83,3 +83,27 @@
     color: var(--dark-0);
     margin: 0;
 }
+
+/* =========================
+   FRISE – VARIANTES COULEURS
+   ========================= */
+
+/* Carte JAUNE */
+.frise-card--yellow {
+    background: var(--yellow);
+}
+
+.frise-card--yellow .frise-card__dates,
+.frise-card--yellow .frise-card__name {
+    color: var(--white);
+}
+
+/* Carte ORANGE */
+.frise-card--orange {
+    background: var(--orange);
+}
+
+.frise-card--orange .frise-card__dates,
+.frise-card--orange .frise-card__name {
+    color: var(--white);
+}
