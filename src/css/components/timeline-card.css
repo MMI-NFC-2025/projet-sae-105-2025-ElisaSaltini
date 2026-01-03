@@ -107,3 +107,11 @@
 .frise-card--orange .frise-card__name {
     color: var(--white);
 }
+
+/* =========================
+   TIMELINE – DERNIÈRE CARD
+   ========================= */
+
+.frise-card--last {
+    margin-bottom: 4rem;
+}
