@@ -1,0 +1,60 @@
+/* =========================
+   FORMULAIRE DE CONTACT — TRÈS COMPACT
+   ========================= */
+
+.contact-form {
+    margin: 1.25rem 0 2rem;
+    padding: 0 2.25rem;
+}
+
+/* Form */
+.contact-form__form {
+    max-width: 20rem;
+    /* ⬅ plus étroit */
+}
+
+/* Champ */
+.contact-form__field {
+    margin-bottom: 0.9rem;
+    /* ⬅ espaces fortement réduits */
+}
+
+/* Label */
+.contact-form__field label {
+    display: block;
+    font-family: var(--font-inter);
+    font-size: var(--text-sm);
+    /* inchangé */
+    font-weight: 500;
+    color: var(--dark-0);
+    margin-bottom: 0.25rem;
+}
+
+/* Inputs & textarea */
+.contact-form__field input,
+.contact-form__field textarea {
+    width: 100%;
+    border: none;
+    background: var(--blue);
+    border-radius: 1.1rem;
+    /* ⬅ moins arrondi */
+    padding: 0.45rem 0.9rem;
+    /* ⬅ très compact */
+    font-family: var(--font-inter);
+    font-size: var(--text-sm);
+    /* inchangé */
+    color: var(--white);
+    outline: none;
+}
+
+/* Champ texte */
+.contact-form__field textarea {
+    resize: none;
+    min-height: 5.5rem;
+    /* ⬅ nettement plus petit */
+}
+
+/* Bouton */
+.contact-form__actions {
+    margin-top: 0.5rem;
+}
