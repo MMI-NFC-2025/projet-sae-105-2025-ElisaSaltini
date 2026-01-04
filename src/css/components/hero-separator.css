@@ -1,0 +1,41 @@
+/* =========================
+   HERO SEPARATOR 1
+   ========================= */
+
+.hero-separator {
+    position: relative;
+    height: 7rem;
+    margin: 0rem 0;
+    overflow-x: hidden;
+}
+
+/* Rectangle orange (fond, en haut) */
+.hero-separator__bar--orange {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 4.5rem;
+    background: var(--orange);
+}
+
+/* Rectangle jaune (par-dessus, plus bas, plus long) */
+.hero-separator__bar--yellow {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 80%;
+    height: 3rem;
+    background: var(--yellow);
+}
+
+/* Cadre fin noir (décoratif) */
+.hero-separator__frame {
+    position: absolute;
+    top: 1.5rem;
+    left: -0.1rem;
+    width: 30%;
+    height: 5.5rem;
+    border: 0.0625rem solid var(--dark-0);
+    pointer-events: none;
+}
