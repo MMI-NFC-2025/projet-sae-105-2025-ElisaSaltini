@@ -39,3 +39,47 @@
     border: 0.0625rem solid var(--dark-0);
     pointer-events: none;
 }
+
+
+
+/* =========================
+   HERO SEPARATOR CONTACT
+   ========================= */
+
+.hero-separator-alt {
+    position: relative;
+    height: 7.8rem;
+    margin: 0rem 0;
+    overflow: hidden;
+}
+
+
+/* Rectangle BLEU – bas gauche */
+.hero-separator-alt__bar--blue {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    width: 85%;
+    height: 5rem;
+    background: var(--blue);
+}
+
+/* Rectangle ORANGE – haut droite */
+.hero-separator-alt__bar--orange {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 3rem;
+    background: var(--orange);
+}
+
+.hero-separator-alt__frame {
+    position: absolute;
+    top: 2rem;
+    left: -0.1rem;
+    width: 35%;
+    height: 5.5rem;
+    border: 0.0625rem solid var(--dark-0);
+    pointer-events: none;
+}
