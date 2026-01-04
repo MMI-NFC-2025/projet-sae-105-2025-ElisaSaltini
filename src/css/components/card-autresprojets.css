@@ -59,3 +59,18 @@
     font-weight: 700;
     margin: 0;
 }
+
+
+/* =========================
+   VARIANTES COULEURS
+   ========================= */
+
+/* Variante ROUGE */
+.chronova-card--red .chronova-card__frame {
+    background: var(--orange);
+}
+
+/* Variante JAUNE */
+.chronova-card--yellow .chronova-card__frame {
+    background: var(--yellow);
+}
