@@ -19,6 +19,7 @@
 @import "./components/transition-frise.css";
 @import "./components/timeline-card.css";
 @import "./components/film-card.css";
+@import "./components/card-autresprojets.css";
 
 /* Article */
 @import "./components/article-media.css";

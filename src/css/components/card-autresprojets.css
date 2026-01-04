@@ -1,0 +1,61 @@
+/* =========================
+   CARD – AUTRES PROJETS
+   ========================= */
+
+.chronova-card {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+/* =========================
+   CADRE IMAGE + RECTANGLE
+   ========================= */
+
+.chronova-card__frame {
+    position: relative;
+    padding: 1.5rem;
+    background: var(--blue);
+    display: inline-block;
+}
+
+/* Image */
+.chronova-card__image {
+    display: block;
+    max-width: 18rem;
+    width: 100%;
+    height: auto;
+}
+
+/* =========================
+   TEXTE SUPERPOSÉ
+   ========================= */
+
+.chronova-card__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: var(--white);
+    pointer-events: none;
+}
+
+/* Citation */
+.chronova-card__quote {
+    font-family: var(--font-inter);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin: 0 0 0.25rem;
+}
+
+/* Auteur */
+.chronova-card__author {
+    font-family: var(--font-inter);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    margin: 0;
+}
