@@ -402,3 +402,42 @@
 .hero--frise .article-content {
     padding-top: 0;
 }
+
+
+/* =========================
+   HERO – AUTRES PROJETS
+   ========================= */
+
+.hero--projects {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Titre principal */
+.hero--projects .hero-article__title {
+    margin-bottom: 0.25rem;
+}
+
+/* Bloc texte sous le titre */
+.hero-projects__intro {
+    padding: 0 1.5rem;
+    max-width: 36rem;
+}
+
+/* Question */
+.hero-projects__question {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.5rem;
+    color: var(--dark-0);
+}
+
+/* Texte descriptif */
+.hero-projects__text {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    line-height: 1.45;
+    margin: 0;
+    color: var(--dark-0);
+}
