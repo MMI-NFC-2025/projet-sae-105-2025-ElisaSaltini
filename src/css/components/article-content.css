@@ -36,3 +36,17 @@
 .article-content__text p:last-child {
     margin-bottom: 0;
 }
+
+
+/* =========================
+   ARTICLE CONTENT – VARIANTE AÉRÉE
+   ========================= */
+
+.article-content--spaced h2 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.article-content--spaced p {
+    margin-bottom: 1.5rem;
+}

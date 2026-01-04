@@ -4,9 +4,9 @@
 
 .hero-separator {
     position: relative;
-    height: 7rem;
+    height: 7.2rem;
     margin: 0rem 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* Rectangle orange (fond, en haut) */
