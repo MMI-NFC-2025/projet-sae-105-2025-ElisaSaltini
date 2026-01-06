@@ -126,7 +126,8 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 2.5rem;
+    margin-right: 2rem;
 }
 
 .article-content {
@@ -277,7 +278,7 @@
 
 .article-media--book {
     max-width: 10rem;
-    margin-left: 0rem;
+    margin-left: -0.5rem;
     top: 1rem
 }
 
@@ -292,7 +293,7 @@
 /* Légende */
 
 .article-caption--book {
-    margin-left: -2rem;
+    margin-left: -2.1rem;
     margin-top: 0.5rem;
     font-size: var(--text-xxs);
     font-weight: 500;
@@ -302,7 +303,7 @@
 /* texte */
 
 .article-card--book {
-    gap: 1.75rem;
+    gap: 3.5rem;
 }
 
 .article-card--book .article-content {
