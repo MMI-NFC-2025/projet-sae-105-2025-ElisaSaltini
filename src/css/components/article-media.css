@@ -273,7 +273,7 @@
 }
 
 
-/* VARIANTE IMAGE – ARTICLE 4 (SCÈNE 2) */
+/* VARIANTE IMAGE ARTICLE 4 (SCÈNE 2) */
 
 .article-media-block--scene-2 {
     margin-top: 1rem;
@@ -419,7 +419,8 @@
 
 .article-media-block--bauhaus-cover {
     margin-bottom: 1rem;
-    margin-top: -0.5rem;;
+    margin-top: -0.5rem;
+    ;
 }
 
 /* Zone des rectangles du haut */
